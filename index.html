@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせフォーム</title>
+  <!-- 外部CSSファイルをリンク -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- フォーム全体のコンテナ -->
+  <div class="Form">
+    <!-- 会社名入力フィールド -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>会社名
+      </p>
+      <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和" id="company-name">
+      <p class="Form-Validation-Message" id="company-name-error">会社名を入力してください</p>
+    </div>
+    <!-- 氏名入力フィールド -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>氏名
+      </p>
+      <input type="text" class="Form-Item-Input" placeholder="例）山田太郎" id="name">
+      <p class="Form-Validation-Message" id="name-error">氏名を入力してください</p>
+    </div>
+    <!-- 電話番号入力フィールド -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>電話番号
+      </p>
+      <input type="tel" class="Form-Item-Input" placeholder="例）000-0000-0000" id="phone">
+      <p class="Form-Validation-Message" id="phone-error">電話番号を入力してください</p>
+    </div>
+    <!-- メールアドレス入力フィールド -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>メールアドレス
+      </p>
+      <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com" id="email">
+      <p class="Form-Validation-Message" id="email-error">メールアドレスを入力してください</p>
+    </div>
+    <!-- お問い合わせ内容入力フィールド -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>お問い合わせ内容
+      </p>
+      <textarea class="Form-Item-Textarea" placeholder="内容を入力してください" id="message"></textarea>
+      <p class="Form-Validation-Message" id="message-error">お問い合わせ内容を入力してください</p>
+    </div>
+    <!-- 送信ボタン -->
+    <button type="submit" class="Form-Btn">送信する</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
